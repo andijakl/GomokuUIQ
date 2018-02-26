@@ -1,4 +1,4 @@
-# GomokuUIQ
+# Gomoku
 
 Tutorial Solution for Gomoku game on Symbian / UIQ / S60
 
