@@ -1,0 +1,28 @@
+/*
+ ============================================================================
+ Name		 : GomokuPlayerImplementation.l01
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : English translation file for the player implementations.
+ ============================================================================
+ */
+
+#define qtn_player_human_name "Human"
+#define qtn_player_human_type "Human\tLocal Player"
+
+#define qtn_player_ai_reference_name "Reference AI"
+#define qtn_player_ai_reference_type "Reference AI\tAI Level 3"
+
+#define qtn_player_ai_defensive_name "Defensive AI"
+#define qtn_player_ai_defensive_type "Defensive AI\tAI Level 2"
+
+#define qtn_player_ai_aggressive_name "Aggressive AI"
+#define qtn_player_ai_aggressive_type "Aggressive AI\tAI Level 1"
+
+#define qtn_player_ai_random_name "Random AI"
+#define qtn_player_ai_random_type "Random AI\tAI Level 0"

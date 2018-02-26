@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" baseProfile="tiny" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="116.806" height="160.845"
+	 viewBox="0 0 116.806 160.845" xml:space="preserve">
+<g id="Layer_2">
+	<line fill="none" stroke="#FFFFFF" stroke-width="15" x1="5.303" y1="49.343" x2="111.502" y2="155.542"/>
+	<line fill="none" stroke="#FFFFFF" stroke-width="15" x1="111.502" y1="49.343" x2="5.303" y2="155.542"/>
+	<circle fill="none" stroke="#FFFFFF" stroke-width="15" cx="58.402" cy="31.467" r="23.967"/>
+</g>
+<g id="Layer_1">
+	<line fill="none" stroke="#9F2800" stroke-width="5" x1="5.303" y1="49.343" x2="111.502" y2="155.542"/>
+	<line fill="none" stroke="#9F2800" stroke-width="5" x1="111.502" y1="49.343" x2="5.303" y2="155.542"/>
+	<circle fill="none" stroke="#9F2800" stroke-width="5" cx="58.402" cy="31.467" r="23.967"/>
+</g>
+</svg>

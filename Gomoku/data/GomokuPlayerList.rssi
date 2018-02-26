@@ -1,0 +1,72 @@
+/*
+ ============================================================================
+ Name		 : GomokuPlayerList.rssi
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file contains the resource definitions for the player list view.
+ ============================================================================
+ */
+RESOURCE AVKON_VIEW r_gomoku_player_list_gomoku_player_list_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_gomoku_player_list_options_menu;
+	toolbar = 0;
+	}
+/*
+RESOURCE CBA r_gomoku_player_list_next_back_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EGomokuNextCmd;
+			txt = STRING_r_next_cmd;
+			},
+		CBA_BUTTON
+			{
+			id = EGomokuBackCmd;
+			txt = STRING_r_back_cmd;
+			}
+		};
+	}
+RESOURCE CBA r_gomoku_player_list_next_exit_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EGomokuNextCmd;
+			txt = STRING_r_next_cmd;
+			},
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyExit;
+			txt = STRING_r_exit_cmd;
+			}
+		};
+	}
+*/
+RESOURCE MENU_BAR r_gomoku_player_list_options_menu
+	{
+    titles=
+        {
+        MENU_TITLE {menu_pane = r_gomoku_player_list_menu1;}
+        };
+	}
+
+RESOURCE MENU_PANE r_gomoku_player_list_menu1
+    {
+    items = 
+        {
+        MENU_ITEM {command = EGomokuNextCmd;  txt = STRING_r_next_cmd;},
+        MENU_ITEM {command = EGomokuShowStatsCmd;  txt = STRING_r_stats_cmd;},
+        MENU_ITEM {command = EGomokuResetStatsCmd;  txt = STRING_r_reset_stats_cmd;},
+        MENU_ITEM {command = EGomokuAboutCmd;  txt = STRING_r_about_cmd;},
+        MENU_ITEM {command = EEikCmdExit; txt = STRING_r_exit_cmd;}
+        };
+    }

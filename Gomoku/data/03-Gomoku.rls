@@ -1,0 +1,75 @@
+/*
+============================================================================
+ Name		 : 03-Gomoku.rls
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : An .rls file defines symbolic identifiers for strings, to
+ 		   which the resource file refers when it needs the associated
+ 		   string. For more information about .rls see "How to localise
+ 		   resources" section in the SDK documentation.
+		   German localization file
+============================================================================
+*/
+
+// Text showed in the view
+rls_string STRING_r_Gomoku_text "Gomoku"
+
+rls_string STRING_r_next_cmd "Weiter"
+rls_string STRING_r_back_cmd "Zurück"
+rls_string STRING_r_exit_cmd "Beenden"
+rls_string STRING_r_options_cmd "Optionen"
+
+// General text
+rls_string STRING_r_Gomoku_close_debug_cmd "Beenden (Debug)"
+rls_string STRING_r_about_cmd "Über"
+rls_string STRING_r_about_text "Gomoku v1.10\nMopius / Andreas Jakl\nsymbianresources.com"
+rls_string STRING_r_about_line1_text "Gomoku v1.10"
+rls_string STRING_r_about_line2_text "Andreas Jakl, 2009"
+
+// Settings View - Page: Players
+rls_string STRING_r_rescan_short_cmd "Aktualisieren"
+rls_string STRING_r_rescan_cmd "Spielerliste aktualisieren"
+rls_string STRING_r_player1_text "1/3: Wähle Spieler 1"
+rls_string STRING_r_player2_text "2/3: Wähle Spieler 2"
+rls_string STRING_r_stats_cmd "Zeige Statistik"
+rls_string STRING_r_reset_stats_cmd "Statistik zurücksetzen"
+rls_string STRING_r_reset_stats_confirm "Statistiken für diesen Spieler zurücksetzen?"
+rls_string STRING_r_reset_stats_success "Zurücksetzen der Statistiken war erfolgreich"
+rls_string STRING_r_stats_dlg "Spieler: %S\nGespielt: %d\nGewonnen: %d"
+rls_string STRING_r_ai "KI"	// String to identify AI player for player list
+
+// Settings View - Page: Properties
+rls_string STRING_r_start_game_cmd "Spiel starten"
+rls_string STRING_r_game_settings "3/3: Einstellungen"
+rls_string STRING_r_pair_check_text "Paare Einklemmen"
+rls_string STRING_r_pair_check_text_enabled "Aktiviert"
+rls_string STRING_r_pair_check_text_disabled "Deaktiviert"
+rls_string STRING_r_num_pairs_win_text "Paare für Gewinn"
+rls_string STRING_r_num_pairs_win_min_text "2"
+rls_string STRING_r_num_pairs_win_max_text "20"
+rls_string STRING_r_grid_size_text "Spielbrettgröße"
+rls_string STRING_r_grid_cols_text "Spielbrett Spalten"
+rls_string STRING_r_grid_rows_text "Spielbrett Zeilen"
+rls_string STRING_r_grid_optimal_size "Optimiere Spielbrettgröße"
+rls_string STRING_r_grid_optimal_size_ok "Spielbrett erfolgreich an die Displaygröße angepasst"
+rls_string STRING_r_grid_optimal_size_already_ok "Spielbrettgröße bereits optimal für die aktuelle Displaygröße"
+rls_string STRING_r_grid_size_min_text "Klein"
+rls_string STRING_r_grid_size_max_text "Groß"
+
+// Game View
+rls_string STRING_r_current_turn_text "Spieler %d: %S"
+rls_string STRING_r_current_turn_pairs_text "%d: %S (P: %d/%d)"
+rls_string STRING_r_newgame_cmd "Neues Spiel"
+rls_string STRING_r_restartgame_cmd "Revanche"
+
+rls_string STRING_r_restart_line1_text "Game Over!"
+rls_string STRING_r_player_won_text "Spieler %d hat gewonnen. Revanche?"
+rls_string STRING_r_tie_text "Das Spiel endete unentschieden. Revanche?"
+rls_string STRING_r_restart_line2_text "Revanche?"
+rls_string STRING_r_really_quit "Spiel beenden?"
+

@@ -1,0 +1,94 @@
+/*
+ ============================================================================
+ Name		 : GomokuPlayerImplementation.rss
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : Resource file that specifies details about the interface
+               implementations provided by this package.
+ ============================================================================
+ */
+
+#include "RegistryInfo.rh"
+#include "GomokuPlayerImplementation.loc"
+
+// Declares the interface implementation provided
+RESOURCE REGISTRY_INFO theInfo
+	{
+	// UID for the DLL. See PlayerImplementation.mmp
+	dll_uid = 0xE00000EB;
+	// Declare array of interface info. This dll contains implementations for
+	// only one interface (CGomokuPlayerInterface).
+	interfaces =
+		{
+		INTERFACE_INFO
+			{
+			// UID of interface that is implemented
+			interface_uid = 0xE0000E00;
+			implementations =
+				{
+				IMPLEMENTATION_INFO
+					{
+					// The human player implementation
+					implementation_uid = 0xE0000E01;
+					version_no = 1;
+					display_name = qtn_player_human_name;
+					default_data = qtn_player_human_type; // in resolution phase this
+					// relates to TEComResolverParams::DataType();
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					// The reference AI implementation which is a lot
+					// smarter than the random AI (which is not that hard
+					// to achieve).
+					implementation_uid = 0xE0000E03;
+					version_no = 1;
+					display_name = qtn_player_ai_reference_name;
+					default_data = qtn_player_ai_reference_type; // in resolution phase this
+					// relates to TEComResolverParams::DataType();
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					// The defensive AI is the same algorithm as the reference AI.
+					// But it is configured in a way so that it prefers defensive moves.
+					implementation_uid = 0xE0000E04;
+					version_no = 1;
+					display_name = qtn_player_ai_defensive_name;
+					default_data = qtn_player_ai_defensive_type; // in resolution phase this
+					// relates to TEComResolverParams::DataType();
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					// The aggressive AI is the same algorithm as the reference AI.
+					// But it is configured in a way so that it prefers aggressive moves.
+					implementation_uid = 0xE0000E05;
+					version_no = 1;
+					display_name = qtn_player_ai_aggressive_name;
+					default_data = qtn_player_ai_aggressive_type; // in resolution phase this
+					// relates to TEComResolverParams::DataType();
+					opaque_data = "";
+					},
+				IMPLEMENTATION_INFO
+					{
+					// A sample and very simple AI implementation
+					// that just does a random move.
+					implementation_uid = 0xE0000E02;
+					version_no = 1;
+					display_name = qtn_player_ai_random_name;
+					default_data = qtn_player_ai_random_type; // in resolution phase this
+					// relates to TEComResolverParams::DataType();
+					opaque_data = "";
+					}
+				};
+			}
+
+		};
+	}
+

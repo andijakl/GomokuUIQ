@@ -1,0 +1,63 @@
+; Installation file for Gomoku application
+;
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: $(EPOCROOT), $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN,GE
+
+; List of localised vendor names - one per language. At least one must be provided (English [EN]).
+; List must correspond to list of languages specified elsewhere in the .pkg
+%{"Mopius","Mopius"}
+
+; The non-localised, globally unique vendor name (mandatory)
+:"Mopius"
+
+; Package header
+; Name, UID3, Major, Minor, Build, Package-type
+#{"Gomoku","Gomoku"},(0xE9192D94),1,10,0
+
+;Supports S60 3rd Edition
+[0x101F7961], 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+;Supports S60 5th Edition
+[0x1028315F], 0, 0, 0, {"Series60ProductID","Series60ProductID"}
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\Gomoku.exe"		-"!:\sys\bin\Gomoku.exe"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\GomokuPlayerInterface.dll"     -   "!:\sys\bin\GomokuPlayerInterface.dll"
+"$(EPOCROOT)Epoc32\release\$(PLATFORM)\$(TARGET)\GomokuPlayerImplementation.dll"     -   "!:\sys\bin\GomokuPlayerImplementation.dll"
+
+;"$(EPOCROOT)epoc32\data\Z\Resource\plugins\GomokuPlayerImplementation.rsc"   -   "!:\Resource\Plugins\GomokuPlayerImplementation.rsc"
+{
+	"$(EPOCROOT)epoc32\data\Z\Resource\plugins\GomokuPlayerImplementation.r01"
+	"$(EPOCROOT)epoc32\data\Z\Resource\plugins\GomokuPlayerImplementation.r03"
+}  -"!:\Resource\Plugins\GomokuPlayerImplementation.rsc"
+
+
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku.rsc"		-"!:\resource\apps\Gomoku.rsc"
+;"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku_loc.rsc"		-"!:\resource\apps\Gomoku_loc.rsc"
+;"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Gomoku_reg.rsc"	-"!:\private\10003a3f\import\apps\Gomoku_reg.rsc"
+
+{
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku.r01"
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku.r03"
+}  -"!:\resource\apps\Gomoku.rsc"
+
+{
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku_loc.r01"
+	"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku_loc.r03"
+}  -"!:\resource\apps\Gomoku_loc.rsc"
+
+{
+	"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Gomoku_reg.r01"
+	"$(EPOCROOT)Epoc32\data\z\private\10003a3f\apps\Gomoku_reg.r03"
+}  -"!:\private\10003a3f\import\apps\Gomoku_reg.rsc"
+
+"$(EPOCROOT)Epoc32\data\z\resource\apps\Gomoku.mif" -"!:\resource\apps\Gomoku.mif"
+""-"!:\private\E9192D94\Settings.dat",FN

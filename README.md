@@ -2,9 +2,7 @@
 
 Tutorial Solution for Gomoku game on Symbian / UIQ
 
-Gomoku, v1.10.0
-Copyright by Andreas Jakl, 2007-2009
-andreas.jakl@live.com
+Gomoku, v1.10.0, Copyright by Andreas Jakl, 2007-2009, andreas.jakl@live.com
 
 
 # About
@@ -16,15 +14,15 @@ Gomoku for Symbian lets you play this game everywhere, no matter if you have got
 
 # Compatibility and Installation
 
-Gomoku is compatible to all S60 3.x, 5.x, Symbian^1 and upcoming Symbian^2 based mobile phones. It supports both the touchscreen and a keyboard and multiple screen sizes. An extra version for UIQ 3 is available.
+Gomoku is compatible to UIQ, as well as S60 3.x, 5.x, Symbian^1 and Symbian^3 based mobile phones. It supports both the touchscreen and a keyboard and multiple screen sizes.
 
 Please install the .sisx-file on your phone. Please see the manual of your phone for more information on how to install applications.
 
 
 # License
 
-It is licensed under the Eclipse Public License v1.0, which can be obtained from:
-http://www.eclipse.org/legal/epl-v10.html
+It is licensed under the Eclipse Public License v2.0, which can be obtained from:
+https://www.eclipse.org/legal/epl-2.0/
 
 
 # Original Tutorial
@@ -82,10 +80,7 @@ One of the great advantages is that the client is usually not aware that he is u
 
 Another important reason why to use the ECom framework for your own implementations is the Platform Security concept that was introduced with Symbian OS 9. This caused nearly all system-services used by the OS to be migrated from specific plug-in loading code to using the ECom framework as well.
 
-Searching for available polymorphic DLLs is usually not really possible anymore. All binaries are located in the \sys\bin\ folder and cannot be executed from any place outside this highly secured directory. As only applications with the AllFiles capability can read the contents of the directory, it is very inconvenient for a 3
-
-# rd
- party application to dynamically scan for installed DLLs. The ECom plug-ins circumvent this problem, as the plug-ins register with the framework upon installation. During this process, they have to provide information about their existence, their supported interface and how to load the particular plug-in. This allows the client to get a list of available implementations without manually scanning for installed DLL files.
+Searching for available polymorphic DLLs is usually not really possible anymore. All binaries are located in the \sys\bin\ folder and cannot be executed from any place outside this highly secured directory. As only applications with the AllFiles capability can read the contents of the directory, it is very inconvenient for a 3rd party application to dynamically scan for installed DLLs. The ECom plug-ins circumvent this problem, as the plug-ins register with the framework upon installation. During this process, they have to provide information about their existence, their supported interface and how to load the particular plug-in. This allows the client to get a list of available implementations without manually scanning for installed DLL files.
 
 Another issue related to Platform Security is that polymorphic DLLs now require at least the same capabilities as its loading process, restricting the use and flexibility of DLLs. A solution is to use EXEs for plug-ins as well, which then run in an own process, with only the individually required capabilities. This is not done automatically by the ECom framework, but can be easily implemented using a client / server-side glue code. For implementation details, see the _Symbian OS Platform Security_-book [3].
 

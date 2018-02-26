@@ -1,0 +1,161 @@
+/*
+ ============================================================================
+ Name		 : GomokuSettings.rssi
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file contains the resource definitions for the settings view.
+ ============================================================================
+ */
+RESOURCE AVKON_VIEW r_gomoku_settings_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_BACK;
+	menubar = r_gomoku_settings_options_menu;
+	toolbar = 0;
+	}
+/*RESOURCE CBA r_gomoku_settings_start_back_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EGomokuStartGameCmd;
+			txt = STRING_r_start_game_cmd;
+			},
+		CBA_BUTTON
+			{
+			id = EGomokuBackCmd;
+			txt = STRING_r_back_cmd;
+			}
+		};
+	}*/
+RESOURCE MENU_BAR r_gomoku_settings_options_menu
+	{
+    titles=
+        {
+        MENU_TITLE {menu_pane = r_gomoku_settings_list_menu;}
+        };
+	}
+RESOURCE MENU_PANE r_gomoku_settings_list_menu
+    {
+    items = 
+        {
+        MENU_ITEM {command = EGomokuStartGameCmd;  txt = STRING_r_start_game_cmd;},
+        MENU_ITEM {command = EGomokuOptimizeGridSize;  txt = STRING_r_grid_optimal_size;},
+        MENU_ITEM {command = EGomokuAboutCmd;  txt = STRING_r_about_cmd;},
+        MENU_ITEM {command = EGomokuBackCmd;  txt = STRING_r_back_cmd;},
+        MENU_ITEM {command = EEikCmdExit; txt = STRING_r_exit_cmd;}
+        };
+    }
+RESOURCE AVKON_SETTING_ITEM_LIST r_gomoku_settings_list
+	{
+    flags= EAknSettingItemNumberedStyle;
+    title = STRING_r_game_settings;
+    initial_number = 1;
+    items =     
+        {
+        AVKON_SETTING_ITEM
+            {
+            identifier = ESettingsPairCheckbox;
+            setting_page_resource = r_binary_setting_page;
+            associated_resource = r_paircheck_texts;
+            name = STRING_r_pair_check_text;
+            },
+		AVKON_SETTING_ITEM
+			{
+			identifier = ESettingsNumPairsWinSlider;
+			setting_page_resource = r_slider_num_pairs_win_setting_page;
+			name = STRING_r_num_pairs_win_text;
+			},
+        AVKON_SETTING_ITEM
+            {
+            identifier = ESettingsColsSlider;
+            setting_page_resource = r_slider_cols_setting_page;
+            name = STRING_r_grid_cols_text;
+            },
+		AVKON_SETTING_ITEM
+			{
+			identifier = ESettingsRowsSlider;
+			setting_page_resource = r_slider_rows_setting_page;
+			name = STRING_r_grid_rows_text;
+			}
+        };
+	}
+// ---------------------------------------------------------
+//   
+//   SLIDER SETTING PAGE
+//
+// ---------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_slider_num_pairs_win_setting_page
+    {
+    type = EAknCtSlider;
+    label = STRING_r_num_pairs_win_text;
+    editor_resource_id = r_slider_control_2_20;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_slider_cols_setting_page
+    {
+    type = EAknCtSlider;
+    label = STRING_r_grid_cols_text;
+    editor_resource_id = r_slider_control_5_30;
+    }
+
+RESOURCE AVKON_SETTING_PAGE r_slider_rows_setting_page
+    {
+    type = EAknCtSlider;
+    label = STRING_r_grid_rows_text;
+    editor_resource_id = r_slider_control_5_30;
+    }
+
+RESOURCE SLIDER r_slider_control_2_20
+    {
+    layout = EAknSettingsItemSliderLayout;
+    minvalue = 2;
+    maxvalue = 20;
+    step = 1;
+    valuetype = EAknSliderValueBareFigure;
+    minlabel = STRING_r_num_pairs_win_min_text;
+    maxlabel = STRING_r_num_pairs_win_max_text;
+    }
+
+RESOURCE SLIDER r_slider_control_5_30
+    {
+    layout = EAknSettingsItemSliderLayout;
+    minvalue = 5;
+    maxvalue = 30;
+    step = 1;
+    valuetype = EAknSliderValueBareFigure;
+    minlabel = STRING_r_grid_size_min_text;
+    maxlabel = STRING_r_grid_size_max_text;
+    }
+
+// ---------------------------------------------------------
+//   
+//   BINARY SETTING PAGE
+//
+// ---------------------------------------------------------
+//
+RESOURCE AVKON_SETTING_PAGE r_binary_setting_page
+	{
+	label = STRING_r_pair_check_text;
+	type = EAknCtPopupSettingList;
+	}
+	
+RESOURCE AVKON_POPUP_SETTING_TEXTS r_paircheck_texts
+    {
+    setting_texts_resource = r_texts_paircheck;
+    }
+    
+RESOURCE ARRAY r_texts_paircheck
+    {
+    items =
+        {
+        AVKON_ENUMERATED_TEXT { value=1; text = STRING_r_pair_check_text_enabled; },
+        AVKON_ENUMERATED_TEXT { value=0; text = STRING_r_pair_check_text_disabled; }
+        };
+    }   

@@ -1,0 +1,23 @@
+/*
+============================================================================
+ Name		: bld.inf
+ Author	  : 
+ Version	 :
+ Copyright   : Andreas Jakl, 2007
+ Description : This file provides the information required for building the
+			   whole of a Gomoku.
+============================================================================
+*/
+
+PRJ_MMPFILES
+gnumakefile Icons_scalable_dc.mk
+PlayerInterface.mmp
+PlayerImplementation.mmp
+Gomoku.mmp
+
+
+PRJ_PLATFORMS
+// Specify the platforms your component needs to be built for here.
+WINSCW
+GCCE
+

@@ -1,0 +1,65 @@
+/*
+ ============================================================================
+ Name		 : Gomoku resource header file Gomoku.hrh
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file defines the command IDs that are shared by both the C++ code and
+ the resource definition. This file should be #included in both the
+ application's resource file and header file.
+ ============================================================================
+ */
+
+// This file defines the command IDs that are shared by both the C++ code and
+// the resource definition. This file should be #included in both the
+// application's resource file and header file.
+
+#ifndef GOMOKU_HRH
+#define GOMOKU_HRH
+
+/**
+ * IDs of all the views used in the game.
+ */
+enum TGomokuViewUids
+{
+	EGomokuPlayerListViewId = 1, EGomokuSettingsViewId, EGomokuGameViewId
+};
+
+/**
+ * Controls used in the settings page.
+ */
+enum TSettingsControls
+{
+	ESettingsPairCheckbox, ESettingsNumPairsWinSlider, ESettingsColsSlider, ESettingsRowsSlider
+};
+
+enum TDialogControls
+{
+	EConfirmationQueryId = 1    // Define a unique id for each control in the dialog
+}; // ... important if you want to get a pointer to it in the source code
+
+/**
+ Identifies the value for the commands in the application.
+ Commands shall first start on 0x1000.
+ Values before 0x1000 is reserved for commands in the framework.
+ */
+enum TGomokuCommand
+{
+	EGomokuRescanCmd = 0x1000,
+	EGomokuNewGameCmd,
+	EGomokuRestartGameCmd,
+	EGomokuAboutCmd,
+	EGomokuStartGameCmd,
+	EGomokuNextCmd,
+	EGomokuBackCmd,
+	EGomokuShowStatsCmd,
+	EGomokuResetStatsCmd,
+	EGomokuOptimizeGridSize
+};
+
+
+#endif // GOMOKU_HRH

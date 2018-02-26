@@ -1,0 +1,75 @@
+/*
+============================================================================
+ Name		 : 01-Gomoku.rls
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : An .rls file defines symbolic identifiers for strings, to
+ 		   which the resource file refers when it needs the associated
+ 		   string. For more information about .rls see "How to localise
+ 		   resources" section in the SDK documentation.
+		   English localization file.
+============================================================================
+*/
+
+// Text showed in the view
+rls_string STRING_r_Gomoku_text "Gomoku"
+
+rls_string STRING_r_next_cmd "Next"
+rls_string STRING_r_back_cmd "Back"
+rls_string STRING_r_exit_cmd "Exit"
+rls_string STRING_r_options_cmd "Options"
+
+// General text
+rls_string STRING_r_Gomoku_close_debug_cmd "Close (debug)"
+rls_string STRING_r_about_cmd "About"
+rls_string STRING_r_about_text "Gomoku v1.10\nMopius / Andreas Jakl\nsymbianresources.com"
+rls_string STRING_r_about_line1_text "Gomoku v1.10"
+rls_string STRING_r_about_line2_text "Andreas Jakl, 2009"
+
+// Settings View - Page: Players
+rls_string STRING_r_rescan_short_cmd "Rescan"
+rls_string STRING_r_rescan_cmd "Rescan for players"
+rls_string STRING_r_player1_text "1/3: Choose Player 1"
+rls_string STRING_r_player2_text "2/3: Choose Player 2"
+rls_string STRING_r_stats_cmd "Show Statistics"
+rls_string STRING_r_reset_stats_cmd "Reset Statistics"
+rls_string STRING_r_reset_stats_confirm "Really reset stats for this player?"
+rls_string STRING_r_reset_stats_success "Player statistics reset successful"
+rls_string STRING_r_stats_dlg "Player: %S\nGames played: %d\nGames won: %d"
+rls_string STRING_r_ai "AI"	// String to identify AI player for player list
+
+// Settings View - Page: Properties
+rls_string STRING_r_start_game_cmd "Start game"
+rls_string STRING_r_game_settings "3/3: Game Settings"
+rls_string STRING_r_pair_check_text "Pair check"
+rls_string STRING_r_pair_check_text_enabled "Enabled"
+rls_string STRING_r_pair_check_text_disabled "Disabled"
+rls_string STRING_r_num_pairs_win_text "Pairs for Winning"
+rls_string STRING_r_num_pairs_win_min_text "2"
+rls_string STRING_r_num_pairs_win_max_text "20"
+rls_string STRING_r_grid_size_text "Grid size"
+rls_string STRING_r_grid_cols_text "Grid columns"
+rls_string STRING_r_grid_rows_text "Grid rows"
+rls_string STRING_r_grid_optimal_size "Optimize Grid Size"
+rls_string STRING_r_grid_optimal_size_ok "Grid size successfully adapted to the display size"
+rls_string STRING_r_grid_optimal_size_already_ok "Grid size already optimal for the current display size"
+rls_string STRING_r_grid_size_min_text "Small"
+rls_string STRING_r_grid_size_max_text "Large"
+
+// Game View
+rls_string STRING_r_current_turn_text "Player %d: %S"
+rls_string STRING_r_current_turn_pairs_text "%d: %S (P: %d/%d)"
+rls_string STRING_r_newgame_cmd "New game"
+rls_string STRING_r_restartgame_cmd "Restart game"
+
+rls_string STRING_r_restart_line1_text "Game Over!"
+rls_string STRING_r_player_won_text "Player %d won the game. Restart?"
+rls_string STRING_r_tie_text "The game ended in a tie. Restart?"
+rls_string STRING_r_restart_line2_text "Restart?"
+rls_string STRING_r_really_quit "Really quit the game?"
+

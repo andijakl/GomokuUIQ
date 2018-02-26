@@ -1,0 +1,74 @@
+/*
+ ============================================================================
+ Name		 : GomokuGame.rssi
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file contains the resource definitions for the game view.
+ ============================================================================
+ */
+RESOURCE AVKON_VIEW r_gomoku_game_view
+	{
+	cba = R_AVKON_SOFTKEYS_OPTIONS_EXIT;
+	menubar = r_gomoku_game_options_menu;
+	toolbar = 0;
+	}
+
+RESOURCE CBA r_gomoku_game_options_newgame_control_pane
+	{
+	buttons =
+		{
+		CBA_BUTTON
+			{
+			id = EAknSoftkeyOptions;
+			txt = STRING_r_options_cmd;
+			},
+		CBA_BUTTON
+			{
+			id = EGomokuNewGameCmd;
+			txt = STRING_r_newgame_cmd;
+			}
+		};
+	}
+
+RESOURCE MENU_BAR r_gomoku_game_options_menu
+    {
+    titles=
+        {
+        MENU_TITLE {menu_pane = r_gomoku_game_menu1;}
+        };
+    }
+
+RESOURCE MENU_PANE r_gomoku_game_menu1
+    {
+    items = 
+        {
+        MENU_ITEM {command = EGomokuNewGameCmd;  txt = STRING_r_newgame_cmd;},
+        MENU_ITEM {command = EGomokuRestartGameCmd;  txt = STRING_r_restartgame_cmd;},
+        MENU_ITEM {command = EGomokuAboutCmd;  txt = STRING_r_about_cmd;},
+        MENU_ITEM {command = EEikCmdExit; txt = STRING_r_exit_cmd;}
+        };
+    }
+
+RESOURCE DIALOG r_gomoku_exit_query
+    {
+    flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = STRING_r_really_quit;
+                };
+            }
+        };
+    }

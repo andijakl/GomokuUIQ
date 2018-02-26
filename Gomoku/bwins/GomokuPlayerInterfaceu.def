@@ -1,0 +1,22 @@
+EXPORTS
+	??1CGomokuPlayerInterface@@UAE@XZ @ 1 NONAME ; CGomokuPlayerInterface::~CGomokuPlayerInterface(void)
+	??1CGrid@@UAE@XZ @ 2 NONAME ; CGrid::~CGrid(void)
+	?CopyFrom@CGrid@@QAEXPBV1@@Z @ 3 NONAME ; void CGrid::CopyFrom(class CGrid const *)
+	?GetCols@CGrid@@QBEHXZ @ 4 NONAME ; int CGrid::GetCols(void) const
+	?GetGrid@CGrid@@QBEPAPAVTGridCell@@XZ @ 5 NONAME ; class TGridCell * * CGrid::GetGrid(void) const
+	?GetGridCell@CGrid@@QBEPAVTGridCell@@HH@Z @ 6 NONAME ; class TGridCell * CGrid::GetGridCell(int, int) const
+	?GetRemainingFreeCells@CGrid@@QAEHXZ @ 7 NONAME ; int CGrid::GetRemainingFreeCells(void)
+	?GetRows@CGrid@@QBEHXZ @ 8 NONAME ; int CGrid::GetRows(void) const
+	?GetSize@CGrid@@QBE?AVTSize@@XZ @ 9 NONAME ; class TSize CGrid::GetSize(void) const
+	?IsInGrid@CGrid@@QAEHHH@Z @ 10 NONAME ; int CGrid::IsInGrid(int, int)
+	?ListImplementationsL@CGomokuPlayerInterface@@SAXAAV?$RPointerArray@VCImplementationInformation@@@@@Z @ 11 NONAME ; void CGomokuPlayerInterface::ListImplementationsL(class RPointerArray<class CImplementationInformation> &)
+	?NewL@CGomokuPlayerInterface@@SAPAV1@ABVTDesC8@@@Z @ 12 NONAME ; class CGomokuPlayerInterface * CGomokuPlayerInterface::NewL(class TDesC8 const &)
+	?NewL@CGomokuPlayerInterface@@SAPAV1@XZ @ 13 NONAME ; class CGomokuPlayerInterface * CGomokuPlayerInterface::NewL(void)
+	?NewL@CGrid@@SAPAV1@PBVCCoeControl@@PAVMGridObserver@@@Z @ 14 NONAME ; class CGrid * CGrid::NewL(class CCoeControl const *, class MGridObserver *)
+	?NewLC@CGrid@@SAPAV1@PBVCCoeControl@@PAVMGridObserver@@@Z @ 15 NONAME ; class CGrid * CGrid::NewLC(class CCoeControl const *, class MGridObserver *)
+	?ResizeGridL@CGrid@@QAEXVTSize@@@Z @ 16 NONAME ; void CGrid::ResizeGridL(class TSize)
+	?SetBgColor@CGrid@@QAEXABVTRgb@@@Z @ 17 NONAME ; void CGrid::SetBgColor(class TRgb const &)
+	?SetGridCell@CGrid@@QAEHHHW4eCellColor@@H@Z @ 18 NONAME ; int CGrid::SetGridCell(int, int, enum eCellColor, int)
+	?SetObserver@CGomokuPlayerInterface@@QAEXPAVMGomokuPlayerObserver@@@Z @ 19 NONAME ; void CGomokuPlayerInterface::SetObserver(class MGomokuPlayerObserver *)
+	?WinnerCheck@CGrid@@QAEHW4eCellColor@@HH@Z @ 20 NONAME ; int CGrid::WinnerCheck(enum eCellColor, int, int)
+

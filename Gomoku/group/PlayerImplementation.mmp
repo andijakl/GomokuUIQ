@@ -1,0 +1,35 @@
+/*
+============================================================================
+ Name		 : Gomoku.mmp
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This is the project specification file for the player 
+           implementation package.
+ 		   For more information see the "MMP file syntax" section in
+ 		   the SDK documentation.
+============================================================================
+*/
+
+TARGETTYPE PLUGIN
+TARGET GomokuPlayerImplementation.dll
+
+UID 0x10009D8D 0xE00000EB
+
+LANG 01 03
+
+LIBRARY euser.lib ECom.lib GomokuPlayerInterface.lib
+
+SYSTEMINCLUDE \EPOC32\INCLUDE \EPOC32\INCLUDE\ECOM
+
+SOURCEPATH ..\PlayerImplementation
+SOURCE GomokuPlayerAiRandom.cpp Proxy.cpp GomokuPlayerAiReference.cpp GomokuPlayerHuman.cpp GomokuPlayerAiAggressive.cpp GomokuPlayerAiDefensive.cpp
+SOURCEPATH ..\PlayerImplementation
+START RESOURCE GomokuPlayerImplementation.rss
+	TARGET GomokuPlayerImplementation.rsc
+END
+USERINCLUDE ..\PlayerInterface

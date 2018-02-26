@@ -1,0 +1,37 @@
+/*
+============================================================================
+ Name		 : Gomoku_loc.rss
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file localise the applications icons and caption
+ 		   for Gomoku.
+============================================================================
+*/
+
+#include <AppInfo.rh>
+#include "Gomoku_loc.rls"
+
+RESOURCE LOCALISABLE_APP_INFO
+	{
+	caption_and_icon =
+		{
+		CAPTION_AND_ICON_INFO
+			{
+			// The caption text is defined in the rls file
+			caption = STRING_r_Gomoku_caption;
+			// Icons are used to represent applications in the
+			// application launcher and application title bar.
+			// The number_of_icons value identifies how many icons
+			// that exist in the icon_file.
+			number_of_icons = 1;
+			// Using the application icons.
+			icon_file = "\\Resource\\Apps\\Gomoku.mif";
+			}
+		};
+	}
+

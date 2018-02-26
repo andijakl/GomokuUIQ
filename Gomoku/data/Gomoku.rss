@@ -1,0 +1,136 @@
+/*
+ ============================================================================
+ Name		 : Gomoku.rss
+ Copyright   : Andreas Jakl, 2007-2009
+ 
+ All rights reserved. This program and the accompanying materials
+ are made available under the terms of the Eclipse Public License v2.0
+ which accompanies this distribution, and is available at
+ https://www.eclipse.org/legal/epl-2.0/
+ 
+ Description : This file contains all the resources for the Gomoku game.
+ ============================================================================
+ */
+
+#include <avkon.rsg>
+#include <avkon.rh>
+#include <eikon.rh>
+#include <appinfo.rh>
+
+#include "Gomoku.hrh" // Application specific commands
+
+// Use this statement to ensure that the resources in the file have a unique ID
+// so that an application can use multiple resource files without resource ID
+// conflict. This statement must be the first non-comment statement in the file.
+NAME GOMO
+
+// The three following resources are mandatory fields and need to be the
+// first resource fields in the resource file. Need to be defined in this order.
+// These resources don't need to contain any useful info, just need to be there.
+
+// RSS_SIGNATURE can be used to specify version information
+RESOURCE RSS_SIGNATURE
+{}
+
+// Defines the name of the default file the application framework creates.
+// This resource must always be the second resource in the resource file.
+RESOURCE TBUF
+{	buf = "Gomoku";}
+
+// This resource is NOT used by UIQ.
+// Otherwise this resources is used to define an application's GUI.
+RESOURCE EIK_APP_INFO
+{}
+
+// Strings that should be localised should not be defined in the resource file itself,
+// but in separate files with the extension .rls.
+// Conditional compile, depending on locale
+#ifdef LANGUAGE_01         // if language code is for UK
+ #include "01-Gomoku.rls"
+#elif defined LANGUAGE_03  // if language code is for German
+ #include "03-Gomoku.rls"
+#endif      
+// end conditional compile
+
+//----------------------------------------------------
+//------------------ VIEW COMMANDS -------------------
+//----------------------------------------------------
+// If commands are declared in a seperate file they need to be
+// included after the three mandatory resources, see above.
+//#include "GomokuCommands.ra"
+//----------------------------------------------------
+//------------------ TEXT CONSTANTS ------------------
+//----------------------------------------------------
+// These resources hold strings that are used in the C++ source code,
+// these strings are used as infoprint text.
+// The actual string is defined in the .rls file.
+RESOURCE TBUF r_current_turn_pairs_text
+{	buf = STRING_r_current_turn_pairs_text;}
+RESOURCE TBUF r_current_turn_text
+{	buf = STRING_r_current_turn_text;}
+
+RESOURCE TBUF r_restart_line1_text
+{	buf = STRING_r_restart_line1_text;}
+RESOURCE TBUF r_tie_text
+{	buf = STRING_r_tie_text;}
+RESOURCE TBUF r_player_won_text
+{	buf = STRING_r_player_won_text;}
+RESOURCE TBUF r_restart_line2_text
+{	buf = STRING_r_restart_line2_text;}
+RESOURCE TBUF r_player1_text
+{	buf = STRING_r_player1_text;}
+RESOURCE TBUF r_player2_text
+{	buf = STRING_r_player2_text;}
+RESOURCE TBUF r_ai
+{	buf = STRING_r_ai;}
+
+RESOURCE TBUF r_about_text
+{	buf = STRING_r_about_text;}
+RESOURCE TBUF r_about_line1_text
+{	buf = STRING_r_about_line1_text;}
+RESOURCE TBUF r_about_line2_text
+{	buf = STRING_r_about_line2_text;}
+
+RESOURCE TBUF r_stats_dlg_text
+{	buf = STRING_r_stats_dlg;}
+RESOURCE TBUF r_reset_stats_success
+{	buf = STRING_r_reset_stats_success;}
+
+RESOURCE TBUF r_grid_optimal_size_ok
+{	buf = STRING_r_grid_optimal_size_ok;}
+RESOURCE TBUF r_grid_optimal_size_already_ok
+{	buf = STRING_r_grid_optimal_size_already_ok;}
+
+RESOURCE TBUF r_game_settings
+{	buf = STRING_r_game_settings;}
+
+//----------------------------------------------------
+//---------------------- VIEWS -----------------------
+//----------------------------------------------------
+// The views are declared in seperate files to make a clear distinction between
+// the views. The views needs to be declared after the three mandatory
+// resources, see above.
+
+#include "GomokuPlayerList.rssi"
+#include "GomokuSettings.rssi"
+#include "GomokuGame.rssi"
+
+RESOURCE DIALOG r_gomoku_stats_reset_query
+    {
+    flags = EGeneralQueryFlags;
+	buttons = R_AVKON_SOFTKEYS_YES_NO;
+    items =
+        {
+        DLG_LINE
+            {
+            type = EAknCtQuery;
+            id = EGeneralQuery;
+            control = AVKON_CONFIRMATION_QUERY
+                {
+                layout = EConfirmationQueryLayout;
+                label = STRING_r_reset_stats_confirm;
+                };
+            }
+        };
+    }
+
