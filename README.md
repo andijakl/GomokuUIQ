@@ -44,7 +44,7 @@ A few (non-successive!) impressions of the game implementation:
  ![](https://raw.githubusercontent.com/andijakl/GomokuUIQ/master/media/gomoku-step1.png)
  ![](https://raw.githubusercontent.com/andijakl/GomokuUIQ/master/media/gomoku-step2.png)
  ![](https://raw.githubusercontent.com/andijakl/GomokuUIQ/master/media/gomoku-step3.png)
- ![](https://raw.githubusercontent.com/andijakl/GomokuUIQ/master/media/gomoku-step4.png)
+ ![](https://raw.githubusercontent.com/andijakl/GomokuUIQ/master/media/gomoku-step4.jpg)
 
 A sub-variant of the Gomoku game is called the &quot;Pair Check&quot;-option in this game. If a player manages to enclose two stones of the enemy player with his own, the stones of the enemy are removed (captured) from the playing field. In addition to the usual way of winning a game, this allows an additional scenario: the first player who has captured five or more pairs will also win the game.
 
