@@ -166,6 +166,6 @@ For more information about the ECom framework, take a look at the following reso
 [1] Harrison, R. and M. Shackman: _Symbian OS C++ for Mobile Phones (Volume 3)_. Symbian Press, 2007.
 [2] Stichbury, J: _Symbian OS Explained_. Symbian Press, 2005.
 [3] Heath, C: _Symbian OS Platform Security_. Symbian Press, 2006.
-[4] Nokia: _S60 Platform: ECom Plug-in Architecture v2.0_. 2007. Available online at [http://www.forum.nokia.com/](http://www.forum.nokia.com/)
-[5] Nokia: _S60 Platform: ECom Plug-In Examples v2.0._ 2007. Available online at [http://www.forum.nokia.com/](http://www.forum.nokia.com/)
+[4] Nokia: _S60 Platform: ECom Plug-in Architecture v2.0_. 2007. Was available online at Forum Nokia
+[5] Nokia: _S60 Platform: ECom Plug-In Examples v2.0._ 2007. Was available online at Forum Nokia
 
