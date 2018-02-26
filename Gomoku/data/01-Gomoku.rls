@@ -27,7 +27,7 @@ rls_string STRING_r_options_cmd "Options"
 // General text
 rls_string STRING_r_Gomoku_close_debug_cmd "Close (debug)"
 rls_string STRING_r_about_cmd "About"
-rls_string STRING_r_about_text "Gomoku v1.10\nMopius / Andreas Jakl\nsymbianresources.com"
+rls_string STRING_r_about_text "Gomoku v1.10\nAndreas Jakl"
 rls_string STRING_r_about_line1_text "Gomoku v1.10"
 rls_string STRING_r_about_line2_text "Andreas Jakl, 2009"
 

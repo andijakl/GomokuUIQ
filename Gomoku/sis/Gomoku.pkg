@@ -11,10 +11,10 @@
 
 ; List of localised vendor names - one per language. At least one must be provided (English [EN]).
 ; List must correspond to list of languages specified elsewhere in the .pkg
-%{"Mopius","Mopius"}
+%{"Andreas Jakl","Andreas Jakl"}
 
 ; The non-localised, globally unique vendor name (mandatory)
-:"Mopius"
+:"Andreas Jakl"
 
 ; Package header
 ; Name, UID3, Major, Minor, Build, Package-type
