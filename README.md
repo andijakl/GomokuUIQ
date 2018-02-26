@@ -1,6 +1,6 @@
 # GomokuUIQ
 
-Tutorial Solution for Gomoku game on Symbian / UIQ
+Tutorial Solution for Gomoku game on Symbian / UIQ / S60
 
 Gomoku, v1.10.0, Copyright by Andreas Jakl, 2007-2009, andreas.jakl@live.com
 
